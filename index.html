@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;1,200&display=swap');
+        .item1 { grid-area: logo; }
+        .item2 { grid-area: header; }
+        .item3 { grid-area: main; }
+        .item4 { grid-area: footer; }
+
+        .grid-container {
+        display: grid;
+        grid-template-areas:
+            'logo header header header header header'
+            'main main main main main main'
+            'footer footer footer footer footer footer';
+        /* gap: 10px; */
+        /* background-color: #2196F3; */
+        }
+
+        .grid-container > div {
+        /* background-color: rgba(255, 255, 255, 0.8); */
+        text-align: center;
+        padding: 0 0;
+        font-size: 30px;
+        font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .item1 {
+            height: 9vw;
+            background-color: #cdedf6;
+
+        }
+
+        img {
+            padding-top: 1vw;
+        }
+
+        .item2 {
+            height: 9vw;
+            text-align: center;
+            padding: 0px;
+            background-color: #cdedf6;
+        }
+
+        .item2 h3 {
+            padding-top: 2vw;
+        }
+        .item3 {
+            height: 240px;
+            background-color: #76CDE6;
+        }
+
+        .btn {
+            background-color: #A7DDEC;
+            color: #056265;
+            font-size: 20px;
+            border-radius: 30px;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .btn :hover {
+            color: red;
+        }
+
+        .btn2 {
+            padding-top: 5vw;
+        }
+        /* .item3 h3 {
+            padding-top: 3vw;
+        } */
+
+        .item4 {
+            background-color: #E3F1F5;
+        }
+
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        h6 {
+            font-size: 1vw;
+        }
+
+        .list--hover {
+            padding: 0vw;;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul > li > a {
+            text-decoration: none;
+            font-size: 1vw;
+            text-align: center;
+            color: #2B6A6C;
+        }
+
+        ul > li > a:hover {
+            color: #288285;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">
+            <!-- <h2>iitgn logo</h2> -->
+            <img src="./iitgn_logo.png" alt="" width="50%" height="70%">
+        </div>
+        <div class="item2">
+            <h2>IIT Gandhinagar TA Allocation</h2>
+        </div>
+        <div class="item3">
+            <div class="btn2">
+                <button class="btn">Google sign in</button>
+
+            </div>
+        </div>  
+        <div class="item4">
+
+            <footer class="space--sm footer-2  bg--secondary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-lg-2 col-4">
+                            <h6 class="type--uppercase">QUICK LINKS</h6>
+                            <ul class="list--hover">
+                                <li>
+                                    <a href="https://iitgn.ac.in/about">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="https://iitgn.ac.in/careers">Careers </a>
+                                </li>
+                                                                <li>
+                                    <a href="https://iitgn.ac.in/contact">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="https://donate.iitgn.ac.in/" target="_blank">Donate</a>
+                                </li>
+                                <li>
+                                    <a href="https://sites.google.com/a/iitgn.ac.in/iitgn-forms/" target="_blank">Internal Website</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-4">
+                            <h6 class="type--uppercase">ACADEMICS</h6>
+                            <ul class="list--hover">
+                                <li>
+                                    <a href="https://iitgn.ac.in/academics">Overview</a>
+                                </li>
+                                <li>
+                                    <a href="https://iitgn.ac.in/admissions">Admissions</a>
+                                </li>
+                                <li>
+                                    <a href="https://iitgn.ac.in/academics/courses">Courses</a>
+                                </li>
+                                <li>
+                                    <a href="https://iitgn.ac.in/calendar">Calendar</a>
+                                </li>
+                                <li>
+                                    <a href="https://iitgn.ac.in/students">Students</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-4">
+                            <h6 class="type--uppercase">RESEARCH</h6>
+                            <ul class="list--hover">
+                                <li>
+                                    <a href="https://iitgn.ac.in/research">Overview</a>
+                                </li>
+                                <li>
+                                    <a href="https://iitgn.ac.in/research/facilities">Facilities</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="https://iitgn.ac.in/research/library">Library</a>
+                                </li>
+                                <li>
+                                    <a href="https://iitgn.ac.in/faculty">Faculty</a>
+                                </li>
+                                <li>
+                                    <a href="http://repository.iitgn.ac.in/">Publications</a>
+                                </li>
+                            </ul>
+                        </div>
+        
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+</body>
+</html>
